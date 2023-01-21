@@ -11,7 +11,7 @@ jobs:
       - run: npm install
       - run: npm run lint
   cypress-run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: linter-execution
     steps:
       - uses: actions/checkout@v3
