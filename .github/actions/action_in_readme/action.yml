@@ -1,0 +1,9 @@
+name: "Action to change Readme"
+description: "By Rafa Ferri"
+inputs:
+  resultado:
+    required: true
+    description: "error o exito"
+runs: 
+  using: node16
+  main: dist/index.js
