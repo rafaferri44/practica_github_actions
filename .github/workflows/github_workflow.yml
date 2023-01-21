@@ -49,8 +49,8 @@ jobs:
           message: "Readme Updated"
           push: true
     deploy_job_execution:
-    runs-on: ubuntu-latest
     needs: cypress-execution
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: amondnet/vercel-action@v19
