@@ -36,7 +36,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: result
-      - run: echo "::set-output name=cypress_outcome::$(cat result.txt)"
+      - run: echo "{name}={cypress_outcome::$(cat result.txt)}" >> $GITHUB_STATE
         id: results
       - uses: ./.github/actions/action_in_readme
         env:
