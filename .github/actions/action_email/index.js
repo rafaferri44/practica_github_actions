@@ -19,7 +19,7 @@ async function main() {
         port: 2525,
         auth: {
             user: user_core,
-            pass: pass_core
+            pass: user_pass
         }
 
     });
