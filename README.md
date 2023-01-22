@@ -5,4 +5,3 @@ Example of nextjs project using Cypress.io
 
 <!---End place for the badge -->
 Hola y adiós
-![Cypress.io](https://openclipart.org/image/800px/161515)
