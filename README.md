@@ -4,4 +4,4 @@ Example of nextjs project using Cypress.io
 [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 
 <!---End place for the badge -->
-Hola y adiós![Cypress.io](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Eo_circle_green_checkmark.svg/2048px-Eo_circle_green_checkmark.svg.png)![Cypress.io](https://openclipart.org/image/800px/161515)![Cypress.io](https://openclipart.org/image/800px/161515)
+Hola y adiós

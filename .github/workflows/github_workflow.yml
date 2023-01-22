@@ -58,3 +58,17 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.ORG_ID}}
           vercel-project-id: ${{ secrets.PROJECT_ID}}
+  email_execution:
+    runs-on: ubuntu-latest
+    needs: [deploy_job_execution, cypress-execution]
+    if: ${{ always() }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./email
+        with:
+          linter_job: ${{ needs.linter-execution.result }}
+          cypress_job: ${{ needs.cypress-execution.result }}
+          add_badge_job: ${{ needs.add_badge_job.result }}
+          deploy_job: ${{ needs.deploy_job_execution.result }}
+          user_mail: ${{ secrets.MAIL_USER }}
+          user_pass: ${{ secrets.MAIL_PASS }}

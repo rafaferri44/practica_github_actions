@@ -1,0 +1,30 @@
+name: email
+description: "Action creada para enviar email"
+inputs:
+  dest:
+    description: "resultado"
+    required: true
+  linter_execution:
+    description: "linter_execution"
+    required: true
+  cypress_execution:
+    description: "cypress_execution"
+    required: true
+  add_badge_job:
+    description: "add_badge_job"
+    required: true
+  deploy_job_execution:
+    description: "deploy_job_execution"
+    required: true
+  user_mail:
+    description: "user_mail"
+    required: true
+  user_pass:
+    description: "user_pass"
+    required: true
+outputs:
+  msg:
+    description: "Este es el mensaje de respuesta"
+runs:
+  using: "node16"
+  main: "dist/index.js"
