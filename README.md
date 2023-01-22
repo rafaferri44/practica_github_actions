@@ -105,7 +105,16 @@ Para finalizar , deberemos configurar nuestras contraseñas de aplicación en go
 ![image](https://user-images.githubusercontent.com/75679146/213926292-e7c61d51-e141-41a7-9b2c-fe83491c7746.png)
 
 
-### 
+### Metrics
+
+    Para finalizar este es el último job que crearemos, pero este lo haremos aparte para poder recopilar métricas de los lenguajes
+    más utilizados en los proyectos de nuestro github:
+    
+![image](https://user-images.githubusercontent.com/75679146/213926483-d815e73c-24e6-47ff-9f92-2aede0562832.png)
+    
+    Al tener que haberlo hecho en una cuenta de github vacía, pues me muestra está métrica vacía
+
+![image](https://github.com/rafaferri44/rafaferri44/blob/main/metrics.plugin.topics.svg)
 
 
 
