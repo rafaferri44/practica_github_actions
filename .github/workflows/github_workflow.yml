@@ -64,7 +64,7 @@ jobs:
     if: ${{ always() }}
     steps:
       - uses: actions/checkout@v3
-      - uses: ./email
+      - uses: ./.github/actions/action_email
         with:
           linter_job: ${{ needs.linter-execution.result }}
           cypress_job: ${{ needs.cypress-execution.result }}
