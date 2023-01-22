@@ -80,7 +80,32 @@ El [repositorio](https://github.com/dawEstacio/nextjs-blog-practica)
 
 ![image](https://user-images.githubusercontent.com/75679146/213925961-d112a379-8f0a-432f-8ed8-1ae24f1c8363.png)
 
+### Mail
 
+    En este job haremos que envie un mensaje a los usuarios del repositorio, para ello creamos un nuevo job en el workflow llamado
+    email_execution, el cual esperará a todos los jobs anteriores para recuperar el resultado de cada uno de ellos y enviar un email
+    a la persona la cuál ha sido configurada.
+    
+    Para ello creamos un action donde le pasaremos todos los inputs necesarios para realizar el job:
+    
+![image](https://user-images.githubusercontent.com/75679146/213926087-da93d58b-997a-443e-9511-b18a80c78737.png)
+    
+    Y al igual que con la acción de Badge, tendremos que compilar el action con @vercel/ncc.
+    
+![image](https://user-images.githubusercontent.com/75679146/213926150-2204be87-ae20-4b4b-a004-2aa00839feec.png)
+    
+    Para este job será necesario instalar las dependencias necesarias:
+- npm i @actions/core
+- npm i nodemailer
+
+![image](https://user-images.githubusercontent.com/75679146/213926189-3e66d3f3-acae-45cc-a8f6-1d10f717d4c4.png)
+
+Para finalizar , deberemos configurar nuestras contraseñas de aplicación en google
+
+![image](https://user-images.githubusercontent.com/75679146/213926292-e7c61d51-e141-41a7-9b2c-fe83491c7746.png)
+
+
+### 
 
 
 
